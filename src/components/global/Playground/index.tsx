@@ -11,7 +11,7 @@ enum Mode {
 
 export default function Playground() {
   const [mode, setMode] = useState(Mode.iOS);
-  const [expanded, setExpanded] = useState(false);
+  const [codeExpanded, setCodeExpanded] = useState(false);
 
   // TODO FW-741: Load code snippets remotely
 
@@ -43,8 +43,8 @@ export default function Playground() {
           <div className="playground__control-group playground__control-group--end">
             <button
               className="playground__icon-button"
-              aria-label={expanded ? 'Hide source code' : 'Show full source'}
-              onClick={() => setExpanded(!expanded)}
+              aria-label={codeExpanded ? 'Hide source code' : 'Show full source'}
+              onClick={() => setCodeExpanded(!codeExpanded)}
             >
               <svg
                 aria-hidden="true"
@@ -81,8 +81,8 @@ export default function Playground() {
         <div className="playground__preview">{/* TODO FW-743: iframe Preview */}</div>
       </div>
       <div
-        className={'playground__code-block ' + (expanded ? 'playground__code-block--expanded' : '')}
-        aria-expanded={expanded ? 'true' : 'false'}
+        className={'playground__code-block ' + (codeExpanded ? 'playground__code-block--expanded' : '')}
+        aria-expanded={codeExpanded ? 'true' : 'false'}
       >
         {/* TODO FW-744: Code blocks per language */}
         <CodeBlock>Fake code block</CodeBlock>
