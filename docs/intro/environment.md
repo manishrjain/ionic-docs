@@ -48,7 +48,7 @@ Permission errors are common on macOS when installing global packages with `npm`
 
 Although not required, the version control system [Git](../reference/glossary.md#git) is highly recommended.
 
-Git is often accompanied by a Git Host, such as [GitHub](https://github.com/), in which case additional setup is required. Follow the tutorial from the Git Host's documentation to set up Git:
+Git is often accompanied by a Git Host (test this thing), such as [GitHub](https://github.com/), in which case additional setup is required. Follow the tutorial from the Git Host's documentation to set up Git:
 
 - GitHub: [Set up Git](https://help.github.com/en/articles/set-up-git)
 - GitLab: [Installing Git](https://docs.gitlab.com/ee/topics/git/how_to_install_git)
